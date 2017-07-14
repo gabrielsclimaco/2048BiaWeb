@@ -164,7 +164,7 @@ hr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .game-container .game-message {
+  .container .game-message {
     display: none;
     position: absolute;
     top: 0;
@@ -180,16 +180,16 @@ hr {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
-    .game-container .game-message p {
+    .container .game-message p {
       font-size: 60px;
       font-weight: bold;
       height: 60px;
       line-height: 60px;
       margin-top: 222px; }
-    .game-container .game-message .lower {
+    .container .game-message .lower {
       display: block;
       margin-top: 59px; }
-    .game-container .game-message a {
+    .container .game-message a {
       display: inline-block;
       background: #8f7a66;
       border-radius: 3px;
@@ -199,14 +199,24 @@ hr {
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
-      .game-container .game-message a.keep-playing-button {
+      .container .game-message .won-image a.keep-playing-button {
         display: none; }
-    .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
-      color: #f9f6f2; }
-      .game-container .game-message.game-won a.keep-playing-button {
+    .container .game-message.game-won {
+      color: #f9f6f2;
+    }
+      .container .game-message.game-won .won-image {
+        opacity: 0.7;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background: rgba(237, 194, 46, 0.5) url('../images/2048.jpg') center/cover;
+      }
+      .container .game-message.game-won .won-image a.keep-playing-button {
         display: inline-block; }
-    .game-container .game-message.game-won, .game-container .game-message.game-over {
+    .container .game-message.game-won, .game-container .game-message.game-over {
       display: block; }
 
 .grid-container {
