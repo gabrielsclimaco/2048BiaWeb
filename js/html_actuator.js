@@ -7,6 +7,9 @@ function HTMLActuator() {
   this.score = 0;
 }
 
+const loveMessage = 'Há um ano eu assumi com você um compromisso de te fazer ' +
+  'feliz, '
+
 HTMLActuator.prototype.actuate = function (grid, metadata) {
   var self = this;
 
@@ -126,10 +129,10 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? loveMessage : "Game over!";
 
   this.messageContainer.classList.add(type);
-  this.messageContainer.getElementsByTagName("p")[0].textContent = message;
+  this.messageContainer.getElementsByTagName("span")[0].textContent = message;
 };
 
 HTMLActuator.prototype.clearMessage = function () {

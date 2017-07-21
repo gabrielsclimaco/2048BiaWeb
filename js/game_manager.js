@@ -47,7 +47,7 @@ GameManager.prototype.setup = function () {
     this.grid        = new Grid(this.size);
     this.score       = 0;
     this.over        = false;
-    this.won         = false;
+    this.won         = true;
     this.keepPlaying = false;
 
     // Add the initial tiles
