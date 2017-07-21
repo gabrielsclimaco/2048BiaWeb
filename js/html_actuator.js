@@ -7,8 +7,9 @@ function HTMLActuator() {
   this.score = 0;
 }
 
-const loveMessage = 'Há um ano eu assumi com você um compromisso de te fazer ' +
-  'feliz, '
+const loveMessage = 'Quando te pedi em namoro eu imaginei muitas coisas, mas ' +
+  'não imaginei que seria tão feliz quanto eu estou agora. Amo muito você e q' +
+  'uero fazer desses o primeiro ano de uma vida de felicidade. <3'
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
   var self = this;
