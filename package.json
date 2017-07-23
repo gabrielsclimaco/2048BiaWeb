@@ -1,0 +1,20 @@
+{
+  "name": "2048BiaWeb",
+  "version": "1.0.0",
+  "description": "Version of 2048 made to celebrate one year dating my girlfriend. Built for web with HTML 5, CSS 3 and JS.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "express-jwt": "^5.1.0",
+    "mongoose": "^4.8.4",
+    "webpack-merge": "^3.0.0"
+  }
+}
